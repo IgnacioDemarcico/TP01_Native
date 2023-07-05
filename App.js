@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Card from './components/Card';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Image source={require('./imagenes/logo.jpeg')} style={styles.imagen}/>
       <Text style={styles.texto}>Probá nuestro café</Text>
-      <StatusBar style="auto" />
+      <br/>
+      <br/>
+      <Card/>
     </View>
   );
 }
